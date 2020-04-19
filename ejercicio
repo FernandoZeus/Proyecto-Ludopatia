@@ -80,3 +80,4 @@ public class InterfazSimple implements MouseListener{
 		
 	} 
 }
+pos ok

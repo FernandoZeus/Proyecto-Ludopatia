@@ -1,0 +1,82 @@
+package swing;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import javax.swing.JButton; 
+import javax.swing.JFrame;
+import javax.swing.JLabel; 
+import javax.swing.JPanel; 
+import javax.swing.JTextField; 
+
+public class InterfazSimple implements MouseListener{ 
+	 
+	private JLabel etiqueta1;
+	private JFrame ventana;
+	private JPanel panelDeContenido;
+	
+	public InterfazSimple() {
+		
+    	String texto="hola2";
+    	//COMPONENTES
+    	//Ventana 
+    	 JFrame ventana = new JFrame("Titulo de la ventana"); 
+    	 ventana.setSize(300, 200);        
+    	 ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+    	 ventana.setVisible(true);
+    	 //Panel de contenido 
+    	 JPanel panelDeContenido = new JPanel(); 
+    	 //componentes del texto DENTRO DE PANEL DE CONTENIDO 
+    	 JLabel etiqueta1 = new JLabel("Texto etiqueta"); 
+    	 JLabel etiqueta2 =new JLabel("texo 2");
+    	 //ASOCIACIÓN
+    	 //Asociar contenedor a la ventana
+    	 ventana.setContentPane(panelDeContenido);
+    	 //Asociar componentes que quiero que tenga el panel de contenido en este caso solo texto 
+    	 panelDeContenido.add(etiqueta1);    	 
+    	 //La ventana tiene que escuchar al evento de raton
+    	 panelDeContenido.addMouseListener(this);
+    	 ventana.addMouseListener(this);
+    	 etiqueta1.addMouseListener(this);
+	}
+	
+    public static void main(String[] args) { 
+    	
+    	InterfazSimple interfaz = new InterfazSimple();
+    	
+    }
+
+	@Override
+	public void mouseClicked(MouseEvent e) {
+		// TODO Auto-generated method stub
+		etiqueta1.setText("HOLA");
+	}
+
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+		// TODO Auto-generated method stub
+		etiqueta1.setText("HOLA");
+	}
+
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		// TODO Auto-generated method stub
+		etiqueta1.setText("HOLA");
+		JLabel etiqueta2 = new JLabel("hoo");
+	}
+
+
+	@Override
+	public void mouseEntered(MouseEvent e) {
+		// TODO Auto-generated method stub
+		etiqueta1.setText("HOLA");
+	}
+
+
+	@Override
+	public void mouseExited(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	} 
+}

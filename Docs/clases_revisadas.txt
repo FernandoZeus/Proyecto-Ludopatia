@@ -1,0 +1,28 @@
+
+
+Partida
+.- tiempo
+.- puntos
+.- Crear Personaje (clase)
+.- avanzaTiempo() -> Cada 100 milisegundos
+   .- detectar colisiones
+
+Personaje
+.- posición
+.- dirección
+.- ()
+.- mover(izq, der, salto)
+.- disparar() -> Crear un proyectil 
+
+Proyectil
+.- posicion
+.- movimiento
+
+Malo
+.- dirección
+.- movimiento
+
+
+Colosionador
+.- colección de objetos
+.- detectarColision

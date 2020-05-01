@@ -1,0 +1,21 @@
+SimuladorDeGuerras:
+
+Tengo problemas con la parte de recibirAtaque, 
+que recibe por parámetro una cantidad de golpes pero 
+no sale bien porque no tengo el valor de golpe de cada arma, 
+entonces, mi solución (un poco cutre, lo sé) ha sido dividir la cantidad de armas
+entre 3, así no daría este error pero tendríamos otro, que es la pérdida de datos
+que surje al dividir una cantidad impar entre 3. 
+
+
+BattleBots:
+
+A veces da bucle infinito y no sé por qué sucede. 
+
+Ejemplo Ventanas:
+
+No pude hacer el ejercicio 6 de las ventanas porque no me dio tiempo y porque era muy complicado para mí, a estas alturas.
+
+Ejemplo Ventan propia: 
+
+No sabía muy bien cómo hacerlo, así que hice un poco de un ejemplo que encontré en Internet. 

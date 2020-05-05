@@ -3,7 +3,7 @@ package FZO0422Ejercicio3;
 import java.util.Date;
 import java.util.ArrayList;
 
-public class Array_listSencillo{
+public class ListSencillo{
     public static void main(String[] args) {
      
        ArrayList  suma = new ArrayList ();
@@ -18,5 +18,5 @@ public class Array_listSencillo{
            
             System.out.print(suma.size());
           }
-}
+    }
 }

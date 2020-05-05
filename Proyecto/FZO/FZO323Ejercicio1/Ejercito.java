@@ -43,7 +43,7 @@ public class Ejercito extends UnidadArmada{
 				
 				
 		
-		int i;
+		
 		
 		for (i=0 ; i < aleatorio.length;i++) {
 			

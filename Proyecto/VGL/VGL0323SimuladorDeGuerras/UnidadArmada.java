@@ -3,13 +3,13 @@ package VGL0323SimuladorDeGuerras;
 public abstract class UnidadArmada {
 
 	protected int vida;
-	protected int daño;
+	protected int daÃ±o;
 	protected String nombre;
 	
 	abstract String obtenerTipo();
 	
 	public String toString() {
-		return vida + " - " + daño;
+		return vida + " - " + daÃ±o;
 	}
 	
 	abstract boolean ataqueEfectivo();

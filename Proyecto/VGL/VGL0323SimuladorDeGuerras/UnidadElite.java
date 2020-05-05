@@ -4,7 +4,7 @@ public class UnidadElite extends UnidadArmada {
 
 	public UnidadElite(){
 		vida=100;
-		daño=20;
+		daÃ±o=20;
 		nombre="unidad de elite";
 	}
 

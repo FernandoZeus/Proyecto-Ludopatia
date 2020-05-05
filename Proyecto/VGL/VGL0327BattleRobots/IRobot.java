@@ -6,7 +6,7 @@ public interface IRobot {
 	
 	public int calcularAtaque();
 	
-	public void recibirAtaque(int cantidadDaño);
+	public void recibirAtaque(int cantidadDaÃ±o);
 	
 	public boolean estaVivo();
 	

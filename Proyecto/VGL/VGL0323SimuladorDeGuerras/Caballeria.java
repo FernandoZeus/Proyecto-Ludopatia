@@ -4,7 +4,7 @@ public class Caballeria extends UnidadArmada{
 
 	public Caballeria(){
 		vida=120;
-		daño=50;
+		daÃ±o=50;
 		nombre="caballeria";
 	}
 

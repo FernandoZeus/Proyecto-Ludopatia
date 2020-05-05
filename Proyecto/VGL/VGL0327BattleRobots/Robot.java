@@ -7,7 +7,7 @@ public class Robot implements IRobot{
 	Armas[] armas = new Armas[3];
 	Defensa[] defensa = new Defensa[3];
 	String arma;
-	int daño;
+	int daÃ±o;
 	int fiabilidad;
 	
 	//no se como quitar el "nombre raro" que me sale cuando intento imprimir el nombre del arma y del escudo. Me he quedado sin ideas.
@@ -19,12 +19,12 @@ public class Robot implements IRobot{
 		
 		for(int i=0;i<3;i++) {
 			arma = "arma" + i;
-			daño = (20 +(i*5)) * 2;
+			daÃ±o = (20 +(i*5)) * 2;
 			fiabilidad = (20 +(i*5)) * 2;
-			armas[i] = new Armas(arma,daño,fiabilidad);
+			armas[i] = new Armas(arma,daÃ±o,fiabilidad);
 		}
 		/*armas[0]=new Armas(arma,50,60);
-		armas[1]=new Armas("puñete",30,70);
+		armas[1]=new Armas("puï¿½ete",30,70);
 		armas[2]=new Armas("rayo",80,50);
 		*/
 		defensa[0]= new Defensa("escudo",20,80);
@@ -45,15 +45,15 @@ public class Robot implements IRobot{
 	//calculo el ataque que se va a realizar
 	@Override
 	public int calcularAtaque() {
-		int dañoTotal=0;
+		int daÃ±oTotal=0;
 		
 		System.out.println("El robot atacante es: " + nombre);
 		
 		for(int i=0;i<armas.length;i++) {
-			int calculo = armas[i].obtenerDaño();
+			int calculo = armas[i].obtenerDaÃ±o();
 			
 			if(calculo!=0) {
-				dañoTotal += calculo;
+				daÃ±oTotal += calculo;
 				System.out.println("ARMA ->" + armas[i].getArma() + " Funciona "+ calculo);
 			}else {
 				System.out.println("ARMA ->" + armas[i].getArma() + " No funciona");
@@ -61,24 +61,24 @@ public class Robot implements IRobot{
 		}
 		System.out.println();
 		
-		return dañoTotal;
+		return daÃ±oTotal;
 	}
 
 	//calculo el ataque que se va a recibir
 	@Override
-	public void recibirAtaque(int cantidadDaño) {
-		int dañoTotal =cantidadDaño;
+	public void recibirAtaque(int cantidadDaÃ±o) {
+		int daÃ±oTotal =cantidadDaÃ±o;
 		
 		for(int i=0;i<defensa.length; i++) {
-			dañoTotal =cantidadDaño;
-			int calculo = defensa[i].bloqueaAtaque(cantidadDaño);
-			dañoTotal = dañoTotal- calculo;
+			daÃ±oTotal =cantidadDaÃ±o;
+			int calculo = defensa[i].bloqueaAtaque(cantidadDaÃ±o);
+			daÃ±oTotal = daÃ±oTotal- calculo;
 			System.out.println();
 			System.out.println(getNombre()+ " defiende");
-			if(calculo!=cantidadDaño) {
-				System.out.println("Proteccion ->" + defensa[i].getDefensa() + " Funciona: " + (cantidadDaño-calculo));
-				System.out.println("Vida antes: "+ vida + " vida tras ataque: " + (vida-dañoTotal));
-				vida= vida-dañoTotal;
+			if(calculo!=cantidadDaÃ±o) {
+				System.out.println("Proteccion ->" + defensa[i].getDefensa() + " Funciona: " + (cantidadDaÃ±o-calculo));
+				System.out.println("Vida antes: "+ vida + " vida tras ataque: " + (vida-daÃ±oTotal));
+				vida= vida-daÃ±oTotal;
 			}else {
 				System.out.println("Proteccion ->" + defensa[i].getDefensa() + " No Funciona ");
 			}

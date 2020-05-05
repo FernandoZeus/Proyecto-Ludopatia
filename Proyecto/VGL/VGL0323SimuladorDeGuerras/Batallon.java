@@ -4,7 +4,7 @@ public class Batallon extends UnidadArmada {
 
 	public Batallon(){
 		vida=80;
-		daño=20;
+		daÃ±o=20;
 		nombre="batallon";
 	}
 

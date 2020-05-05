@@ -4,5 +4,6 @@
 	<classpathentry kind="src" path="Proyecto/AM"/>
 	<classpathentry kind="src" path="Proyecto/CRS"/>
 	<classpathentry kind="src" path="Proyecto/FZO"/>
+	<classpathentry kind="src" path="VGL"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

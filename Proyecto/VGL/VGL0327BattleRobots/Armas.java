@@ -3,32 +3,32 @@ package VGL0327BattleRobots;
 public class Armas {
 
 	private String nombre;
-	private int daño;
+	private int daÃ±o;
 	private int fiabilidad;	
 	//aa
 	
 	//constructor
-	public Armas(String nombre,int daño, int fiabilidad) {
+	public Armas(String nombre,int daÃ±o, int fiabilidad) {
 		this.nombre=nombre;
-		this.daño=daño;
+		this.daÃ±o=daÃ±o;
 		this.fiabilidad=fiabilidad;
 		
 	}
 	
 	//metodo
 	
-	public int obtenerDaño() {
+	public int obtenerDaÃ±o() {
 		if((int)(Math.random()*100)<=fiabilidad) {
 			//has acertado
-			return daño;
+			return daÃ±o;
 			
 		}else {
 			//has fallado
-			daño=0;
+			daÃ±o=0;
 		}
 		
 		
-		return daño;
+		return daÃ±o;
 	}
 
 	public String getArma() {

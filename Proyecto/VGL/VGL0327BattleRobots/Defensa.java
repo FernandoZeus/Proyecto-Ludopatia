@@ -17,14 +17,14 @@ public class Defensa {
 	
 	//metodo
 	
-	public int bloqueaAtaque(int daño) {
+	public int bloqueaAtaque(int daÃ±o) {
 		if((int)(Math.random()*100)<=fiabilidad) {
 			//has acertado
-			return daño-defensa;
+			return daÃ±o-defensa;
 			
 		}else {
 			//has fallado
-			return daño;
+			return daÃ±o;
 		}
 	}
 	

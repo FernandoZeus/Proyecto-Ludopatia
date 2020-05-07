@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>Proyecto/FZO/FZO0805Ejercicio6/Fichero</name>
+			<type>1</type>
+			<location>/home/fernando/Escritorio/nada/Fichero</location>
+		</link>
+	</linkedResources>
 </projectDescription>

@@ -1,4 +1,4 @@
-package CAM0422Tarea3;
+package AM0422Tarea3;
 
 import javax.swing.JPanel;
 import java.awt.event.MouseEvent;

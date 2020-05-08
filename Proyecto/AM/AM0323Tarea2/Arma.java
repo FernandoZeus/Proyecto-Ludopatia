@@ -1,4 +1,4 @@
-package CAM0323Tarea2;
+package AM0323Tarea2;
 
 public class Arma extends Equipamiento{
 	

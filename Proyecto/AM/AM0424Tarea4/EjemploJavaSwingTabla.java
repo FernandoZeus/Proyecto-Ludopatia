@@ -1,4 +1,4 @@
-package CAM0424Tarea4;
+package AM0424Tarea4;
 
 import java.awt.Dimension;
 import java.awt.GridLayout;

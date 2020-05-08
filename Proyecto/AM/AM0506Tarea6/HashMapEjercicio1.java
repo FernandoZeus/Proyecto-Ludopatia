@@ -1,4 +1,4 @@
-package AM05062020Tarea6;
+package AM0506Tarea6;
 
 import java.util.ArrayList;
 import java.util.HashMap;

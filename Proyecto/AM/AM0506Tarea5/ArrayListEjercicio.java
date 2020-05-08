@@ -1,4 +1,4 @@
-package AM05062020Tarea5;
+package AM0506Tarea5;
 import java.util.ArrayList;
 import java.util.Collections;
 

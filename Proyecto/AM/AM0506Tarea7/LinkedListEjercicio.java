@@ -1,4 +1,4 @@
-package AM05062020Tarea7;
+package AM0506Tarea7;
 
 import java.util.LinkedList;
 

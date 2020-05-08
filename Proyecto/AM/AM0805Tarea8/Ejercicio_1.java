@@ -8,9 +8,9 @@ public class Ejercicio_1 {
 	public static void main(String[] args) throws IOException {
 
 		
-		String holaMundo = "¡Hola Mundo!";
+		String holaMundo = "Â¡Hola Mundo!";
 		
-		FileWriter fichero = new FileWriter("DondeEstanLosFicheros\\holamundo.txt");
+		FileWriter fichero = new FileWriter("holamundo.txt");
 		
 		try {
 			for (int i = 0; i <= 6; i++) {
@@ -21,5 +21,5 @@ public class Ejercicio_1 {
 			System.out.println("Algo ha salido mal " + excepcion.getMessage());
 		}
 	}
-	//¿Dónde crea el fichero? Lo crea en la ruta donde se encuentra el proyecto
+	//Â¿DÃ³nde crea el fichero? Lo crea en la ruta donde se encuentra el proyecto
 }

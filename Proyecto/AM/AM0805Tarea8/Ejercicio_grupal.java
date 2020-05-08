@@ -12,7 +12,7 @@ public class Ejercicio_grupal {
 		String leido;
 		FileReader leerFichero = new FileReader("D:\\Users\\Carlo\\Desktop\\notas.txt");
 		BufferedReader br = new BufferedReader(leerFichero);
-		FileWriter notas2 = new FileWriter("D:\\Users\\Carlo\\Desktop\\notas_.txt");
+		FileWriter notas2 = new FileWriter("notas_.txt");
 		
 		try {
 			while((leido = br.readLine())!=null) {
@@ -25,5 +25,10 @@ public class Ejercicio_grupal {
 		}catch(Exception e) {
 			System.out.println("Algo ha salido mal.");
 		}
+		notas2.close();
+		br.close();
+		
+		//¿Qué tendrías que hacer para que el nuevo fichero se llamará "notas.txt"?
+		//Llamarlo de la misma manera.
 	}
 }

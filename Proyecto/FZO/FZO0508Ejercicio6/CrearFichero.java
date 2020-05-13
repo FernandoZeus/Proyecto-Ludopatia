@@ -1,4 +1,4 @@
-package FZO0805Ejercicio6;
+package FZO0508Ejercicio6;
 
 import java.io.FileWriter;
 import java.io.IOException;

@@ -1,13 +1,13 @@
-package FZO323Ejercicio1;
+package FZO0323Ejercicio1;
 public class Caballería extends UnidadArmada {
 
-	final String TIPO = "Caballería";
-	
-	boolean ToF = true;
-	
-	int numero1;
-	
-	int numero2;
+		final String TIPO = "Caballería";
+		
+		boolean tof = true;
+		
+		int numero1;
+		
+		int numero2;
 	
 	
 	public String obtenerTipo(){
@@ -22,17 +22,17 @@ public class Caballería extends UnidadArmada {
 		
 		numero2 = (int) Math.floor(Math.random() * 9 + 1);
 		
-		if ( (numero1 < numero2) ){
-		
-			return ToF ;
-		
-		}else {
+			if ( (numero1 < numero2) ){
 			
-			ToF = false;
+				return tof ;
 			
-			return ToF;
-			
-		}
+			}else {
+				
+				tof = false;
+				
+				return tof;
+				
+			}
 		
 	
 	}

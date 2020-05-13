@@ -1,4 +1,4 @@
-package FZO323Ejercicio1;
+package FZO0323Ejercicio1;
 import java.util.Random;
 
 public class Ejercito extends UnidadArmada{

@@ -1,4 +1,4 @@
-package FZO0605Ejercicio5;
+package FZO0506Ejercicio5;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -10,7 +10,7 @@ public class PersonaVuelta {
 	PersonaVuelta obj2;
 	String Nombre;
 	
-	
+	//falta corregir todo otra vez 
 	static int numero ;
 	
 	static ArrayList <PersonaVuelta> lista2 = new ArrayList<PersonaVuelta>(numero);

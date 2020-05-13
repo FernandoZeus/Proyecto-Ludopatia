@@ -1,4 +1,4 @@
-package FZO323Ejercicio1;
+package FZO0323Ejercicio1;
 
 public class CampodeBatalla {
 

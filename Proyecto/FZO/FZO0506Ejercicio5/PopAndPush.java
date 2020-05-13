@@ -1,4 +1,4 @@
-package FZO0605Ejercicio5;
+package FZO0506Ejercicio5;
 
 import java.util.ArrayList;
 import java.util.Scanner;

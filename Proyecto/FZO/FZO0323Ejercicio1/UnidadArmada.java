@@ -1,14 +1,14 @@
-package FZO323Ejercicio1;
+package FZO0323Ejercicio1;
 public abstract class UnidadArmada{
-	
-	protected int vida;
-	protected int daño;
-	final String EFECTIVO = "¡ Ataque efectivo !";
-	final String NOEFECTIVO = " ¡ Ataque fallido !";
-	final String ATACANTE = " Atacante : ";
-	final String RECIBEATAQUE = " Recibe ataque :  "; 
-	final String FUERA = " Fuera de combate ! ";
-	
+		
+		protected int vida;
+		protected int daño;
+		final String EFECTIVO = "¡ Ataque efectivo !";
+		final String NOEFECTIVO = " ¡ Ataque fallido !";
+		final String ATACANTE = " Atacante : ";
+		final String RECIBEATAQUE = " Recibe ataque :  "; 
+		final String FUERA = " Fuera de combate ! ";
+		
 	public abstract String obtenerTipo();
 	
 	public String toString(){
@@ -38,28 +38,28 @@ public abstract class UnidadArmada{
 		do {
 			
 		
-		if(ataqueEfectivo()) {//si el ataque es efectivo del objeto que quiere atacar a otro
-			
-			System.out.println(ATACANTE + EFECTIVO); //
-			
-			unidadAtacada.vida = unidadAtacada.vida - daño;
-			
-			System.out.println(unidadAtacada.toString());
-			
+			if(ataqueEfectivo()) {//si el ataque es efectivo del objeto que quiere atacar a otro
+				
+				System.out.println(ATACANTE + EFECTIVO); //
+				
+				unidadAtacada.vida = unidadAtacada.vida - daño;
+				
+				System.out.println(unidadAtacada.toString());
+				
 		
-		}else {
+			}else {
 			
+				
+				System.out.println(NOEFECTIVO);//retorna false
+				
+				System.out.println(unidadAtacada.toString());
+				
 			
-			System.out.println(NOEFECTIVO);//retorna false
-			
-			System.out.println(unidadAtacada.toString());
-			
-		
 		}	
 		
 		}while(unidadAtacada.estaViva(unidadAtacada.vida)) ;
 			
-			System.out.print(unidadAtacada + FUERA);
+				System.out.print(unidadAtacada + FUERA);
 		
 	
 		
@@ -83,18 +83,18 @@ public abstract class UnidadArmada{
 		
 		int aleatorio = (int)Math.random()*0 + 4;
 		
-		if(aleatorio == 3) {
+			if(aleatorio == 3) {
+				
+				new Batallón();
+				
+			}else if( aleatorio == 2 ) {
+				
+				new UnidadÉlite();
 			
-			new Batallón();
-			
-		}else if( aleatorio == 2 ) {
-			
-			new UnidadÉlite();
-		
-		}else if (aleatorio == 1) {
-			
-			
-		}
+			}else if (aleatorio == 1) {
+				
+				
+			}
 	}
 	
 	

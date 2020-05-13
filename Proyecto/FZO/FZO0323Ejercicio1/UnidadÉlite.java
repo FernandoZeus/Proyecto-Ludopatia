@@ -1,10 +1,10 @@
-package FZO323Ejercicio1;
+package FZO0323Ejercicio1;
 public class UnidadÉlite extends UnidadArmada{
 
-	final String TIPO = "UnidadÉlite";
-	
-	boolean ToF = true;
-	
+		final String TIPO = "UnidadÉlite";
+		
+		boolean tof = true;
+		
 	public String obtenerTipo(){
 		
 		return TIPO;
@@ -20,20 +20,20 @@ public class UnidadÉlite extends UnidadArmada{
 
 	public boolean ataqueEfectivo() {
 	
-		return ToF;
+		return tof;
 	}
 	
 	public boolean  estaViva( int vida ){
 		
-		if (vida > 0 ){
+			if (vida > 0 ){
+				
+				return true;
 			
-			return true;
-		
-		}else {
-			
-			return false;
-			
-		}
+			}else {
+				
+				return false;
+				
+			}
 
 	}
 }

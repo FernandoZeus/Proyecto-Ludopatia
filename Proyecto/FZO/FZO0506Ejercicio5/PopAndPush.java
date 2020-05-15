@@ -10,17 +10,17 @@ public class PopAndPush {
 	
 	 static String Nombre;
 	
-public PopAndPush(String Nombre) {
+		 public PopAndPush(String Nombre) {
+			
+			this.Nombre = Nombre;
 		
-		this.Nombre = Nombre;
-	
-	}
+		}
 
-public String getNombre() {
+		 public static String getNombre() {
+		
+		return Nombre;
 	
-	return Nombre;
-
-}
+		 }
 	/*//objetos tipo : PopAndPush ( de su mimsa clase en este caso ) los objetos tipo se utilizan para varias cosas
 	PopAndPush ojb;
 	PopAndPush obj2;
@@ -64,33 +64,33 @@ public String getNombre() {
 		PO.push(new PopAndPush("Nombre3"));
 		
 		int i;
-		for(i=0;i >= PO.size();i++) {
-			PopAndPush ob = PO.get(i);
-			System.out.print("Escribe nombre de Persona");
-			Nombre= teclado.nextLine();
-			
-		}
-		for(PopAndPush e : PO) {
-			System.out.println(e.getNombre());
-		}
+			for(i=0;i >= PO.size();i++) {
+				PopAndPush ob = PO.get(i);
+				System.out.print("Escribe nombre de Persona");
+				Nombre= teclado.nextLine();
+				
+			}
+			for(PopAndPush e : PO) {
+				System.out.println(e.getNombre());
+			}
 		
 	 PopAndPush p = PO.pop();
 	
 	 int tamaño = PO.size();
 	 
-	 while(tamaño >= 0) {
-		
-		 PO2.push(p);
-		 tamaño--;
-	}
+			 while(tamaño >= 0) {
+				
+				 PO2.push(p);
+				 tamaño--;
+			}
 	 // PopAndPush p = PO.pop();
 	  
-	 
-		for(PopAndPush b : PO2) {
-		
-		System.out.println(b.getNombre());
-		
-		}
+		 
+			for(PopAndPush b : PO2) {
+			
+			System.out.println(b.getNombre());
+			
+			}
 		//
 		
 	  //PO2.push(p);

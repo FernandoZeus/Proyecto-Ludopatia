@@ -1,4 +1,4 @@
-package balas;
+package Proyecto;
 import java.awt.Color;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;

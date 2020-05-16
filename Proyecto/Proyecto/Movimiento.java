@@ -1,4 +1,4 @@
-package balas;
+package Proyecto;
 
 import java.awt.Color;
 
@@ -8,14 +8,15 @@ import java.awt.event.KeyListener;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import balas.Bala;
-import balas.muñecoBalas;
 
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
+import Proyecto.Bala;
+import Proyecto.muñecoBalas;
 
 public class Movimiento implements KeyListener {
 	

@@ -1,4 +1,4 @@
-package balas;
+package Proyecto;
 
 import java.awt.Graphics;
 import java.awt.Image;

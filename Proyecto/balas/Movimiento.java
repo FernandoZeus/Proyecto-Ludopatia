@@ -1,17 +1,17 @@
 package balas;
 
 import java.awt.Color;
-import java.awt.Image;
+
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.awt.geom.AffineTransform;
-import java.awt.image.AffineTransformOp;
+
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import balas.Bala;
+import balas.muñecoBalas;
 
 import javax.imageio.ImageIO;
-import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -20,7 +20,7 @@ import javax.swing.JPanel;
 public class Movimiento implements KeyListener {
 	
 	public static void main(String[] args) throws IOException {
-		new Movimiento();
+	new Movimiento();
 	}
 	
 	BufferedImage img;
@@ -60,7 +60,7 @@ public class Movimiento implements KeyListener {
 					break;
 				}
 				radianesRotación = -Math.PI/2;
-			    r.x-=5;
+			    r.x-=10;
 				break;
 			
 			case 39:
@@ -68,7 +68,7 @@ public class Movimiento implements KeyListener {
 					break;
 				}
 				radianesRotación = Math.PI/2;
-			    r.x+=5;
+			    r.x+=10;
 				break;
 		}
 		
@@ -86,4 +86,5 @@ public class Movimiento implements KeyListener {
 		// TODO Auto-generated method stub
 		
 	}
+
 }

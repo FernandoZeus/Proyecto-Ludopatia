@@ -24,13 +24,10 @@ public class CampoJuego extends JPanel {
 		ventana.setSize(1024,1024 );
 		ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		ventana.setVisible(true);
-		
-		
-		
+			
 		//creación de Jlabel que contenga la imagen
 		JLabel imagenDeFondo = new JLabel(new ImageIcon(CampoJuego.class.getResource("/recursos/bety2.gif")));
 		//imagenDeFondo.setBorder(BorderFactory.createLineBorder(Color.RED,5));
-	
 	
 		//Contenedor que tenga todo
 		JPanel panelDeContenido = new JPanel();
@@ -40,10 +37,10 @@ public class CampoJuego extends JPanel {
 		panelDeContenido.setBackground(Color.ORANGE);
 		
 		// panelDeContenido.setBorder(BorderFactory.createLineBorder(Color.black));
-	      // Border loweredbevel = BorderFactory.createLoweredBevelBorder();
-	       // panelDeContenido.setBorder(loweredbevel);
-	        Border border = BorderFactory.createLineBorder(Color.DARK_GRAY, 30);
-	        panelDeContenido.setBorder(border);
+	    // Border loweredbevel = BorderFactory.createLoweredBevelBorder();
+	    // panelDeContenido.setBorder(loweredbevel);
+	    Border border = BorderFactory.createLineBorder(Color.DARK_GRAY, 30);
+	    panelDeContenido.setBorder(border);
 	
 	}
 

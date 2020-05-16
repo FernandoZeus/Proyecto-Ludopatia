@@ -19,7 +19,7 @@ public class Audio {
 
 		Clip sonido = AudioSystem.getClip();
 		
-		sonido.open(AudioSystem.getAudioInputStream(new File("src/audio/audio1.wav")));
+		sonido.open(AudioSystem.getAudioInputStream(new File("Proyecto/general/audio1.wav")));
 		
 		sonido.start();
 		

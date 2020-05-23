@@ -31,12 +31,13 @@ public class Juego extends JPanel{
 	public static int puntos=0;
 	public static int nivel=1;
 	
-	
+	//constructor
 	public Juego() {
-	
+		//atributos para los sonidos
+		//cuando te chocas
 		direccionSonidoChoque=getClass().getResource("/multimedia/choque.wav");
 		sonidoChoque = Applet.newAudioClip(direccionSonidoChoque);
-		
+		//cuando saltas
 		direccionSonidoSalto=getClass().getResource("/multimedia/salto.wav");
 		sonidoSalto = Applet.newAudioClip(direccionSonidoSalto);
 		
@@ -45,6 +46,7 @@ public class Juego extends JPanel{
 			public void keyTyped(KeyEvent e) {
 				
 			}
+			//cuando pulsas el space
 			@Override
 			public void  keyPressed(KeyEvent e) {
 				//salto activado
@@ -64,12 +66,14 @@ public class Juego extends JPanel{
 		
 	}
 	
+	//metodo para mover las cosas
 	public void mover() {
 		obstaculo.mover();
 		personaje.mover();
 		fondo.mover();
 	}
 	
+	//metodo para pintar
 	@Override
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
@@ -78,6 +82,7 @@ public class Juego extends JPanel{
 		dibujarPuntaje(g2);
 	}
 	
+	//metodo para dibujar
 	public void dibujar(Graphics2D g) {
 		fondo.paint(g);
 		personaje.paint(g);
@@ -85,7 +90,7 @@ public class Juego extends JPanel{
 		mover();
 	}
 	
-	
+	//aqui mostramos los puntos
 	public void dibujarPuntaje(Graphics2D g) {
 		Graphics2D g1=g, g2=g;
 		Font score = new Font("Arial",Font.BOLD,30);
@@ -101,12 +106,13 @@ public class Juego extends JPanel{
 		}
 	}
 	
+	//fin 
 	public void finJuego() {
 		juegoFinalizado=true;
 		sonidoChoque.play();
 	}
 	
-	
+	//menos vida
 	public void pierdeVida() {
 		sonidoChoque.play();
 		pierdeVida=true;

@@ -194,7 +194,6 @@ public class Principal {
 		
 		//crear ventana
 		JFrame ventana = new JFrame("Juego");
-		//creas el objeto juego
 		Juego juego = new Juego();
 		ventana.add(juego);
 		ventana.setSize(1300, 400);
